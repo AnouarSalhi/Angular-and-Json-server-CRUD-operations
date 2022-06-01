@@ -1,0 +1,14 @@
+{
+  "commands": [
+    {
+      "id": 1,
+      "name": "Anouar Salhi",
+      "price": 0
+    },
+    {
+      "id": 4,
+      "name": "hello",
+      "price": 43
+    }
+  ]
+}

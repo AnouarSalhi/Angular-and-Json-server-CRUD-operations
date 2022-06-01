@@ -1,0 +1,51 @@
+<div class="container mt-5">
+   <div class="row">
+       <div class="col-md-6 mx-auto">
+           <h4>Commands List</h4>
+            <form class="form">
+                <div class="form-group">
+            <label>Enter Name</label>
+            <input [(ngModel)]="newCommand.name" type="text" class="form-control" name="name">
+            </div>
+
+            <div class="form-group">
+                <label>Enter Name</label>
+                <input [(ngModel)]="newCommand.price" type="number" class="form-control" name="price">
+            </div>
+           
+                
+                <input (click)="addCommande()"  type="submit" value="Add" class="btn btn-primary mt-3" name="price">
+         
+            </form>
+
+
+            
+<table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of commands">
+        <th scope="row">{{c.id}}</th>
+        <td>{{c.name}}</td>
+        <td>{{c.price}}</td>
+        <td>
+            <button (click)="deleteCommande(c.id)" class="btn btn-danger">Delete</button>
+          </td>
+      </tr>
+
+    </tbody>
+  </table>
+       </div>
+   </div>
+</div>
+
+
+
+
+
