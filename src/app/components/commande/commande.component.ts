@@ -14,6 +14,7 @@ newCommand:any={
   "name":"",
   "price":""
 };
+updateClicked=false;
   constructor(private commandeService:CommandeService) { }
 
   ngOnInit(): void {
@@ -43,5 +44,22 @@ newCommand:any={
       "name":"",
       "price":""
     };
+  }
+
+  updateShow(c:any){
+    this.newCommand=c;
+    this.updateClicked=true;
+  }
+
+  updateData(){
+   this.commandeService.updateCommand(this.newCommand).subscribe(command=>{
+     this.EmptyInputs();
+     this.updateClicked=false;
+   })
+  }
+
+  cancelUpdate(){
+    this.EmptyInputs();
+    this.updateClicked=false;
   }
 }

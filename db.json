@@ -1,14 +1,19 @@
 {
   "commands": [
     {
-      "id": 1,
-      "name": "Anouar Salhi",
-      "price": 0
+      "id": 4,
+      "name": "Phone",
+      "price": 4301
     },
     {
-      "id": 4,
-      "name": "hello",
-      "price": 43
+      "id": 5,
+      "name": "Smart Watch",
+      "price": 467
+    },
+    {
+      "id": 6,
+      "name": "Laptop",
+      "price": 11003
     }
   ]
 }

@@ -20,4 +20,7 @@ export class CommandeService {
   addCommand(command:CommandeInterface){
        return this.http.post(this.urlApi,command)
   }
+  updateCommand(command:CommandeInterface){
+    return this.http.patch(this.urlApi+"/"+command.id,command)
+}
 }
